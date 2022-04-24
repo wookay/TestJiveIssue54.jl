@@ -17,4 +17,4 @@ jobs:
           version: ${{ matrix.julia-version }}
       - name: runtests
         run: |
-             julia --project=. -e 'using Pkg; Pkg.test()'
+             julia --project=. --color=yes -e 'using Pkg; Pkg.test()'
